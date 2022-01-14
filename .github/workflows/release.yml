@@ -27,6 +27,7 @@ jobs:
       - name: Add helm repos
         run: |
           helm repo add bitnami https://charts.bitnami.com/bitnami
+          helm repo add bn-test https://admin-bn.github.io/bn-test-helm/
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.2.1
